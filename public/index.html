@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/" />
+    <title>Voice App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- custom styles -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-charts/0.2.7/angular-charts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-charts/0.2.7/angular-charts.js"></script>-->
+</head>
+
+<body>
+    <div ng-controller="voiceController as vm" class="grid">
+        <header class="grid__col--12 panel--padded--centered" role="banner">
+            <img class="img--avatar" src="./images/avatar.png" alt="Avatar">
+            <p>Poly Coffee</p>
+            <nav class="navbar" role="navigation">
+                <span id="toggle" class="icn--nav-toggle is-displayed-mobile">
+            <b class="srt">Toggle</b>
+          </span>
+                <ul class="nav is-collapsed-mobile">
+                    <li class="nav__item"><a href="#type">Admin Home</a></li>
+                    <li class="nav__item"><a href="#type">Dashboard</a></li>
+                    <li class="nav__item"><a href="#type">Messages</a></li>
+                    <li class="nav__item"><a href="#type">Analytics</a></li>
+                    <li class="nav__item"><a href="#type">Products</a></li>
+
+                    <li class="nav__item"><a href="#type">Settings</a></li>
+
+                    <li class="nav__item--current"><a href="#nav">Customer Service</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <div class="grid">
+            <div>
+                <h1 class="headline-primary--grouped">Customer Service Survey Results</h1>
+                <h2 class="headline-secondary--grouped">Here is an overview of your ratings so far:</h2>
+
+                <!-- App Layout -->
+                <section id="main" class="container">
+                    <h2>Showing <span id="total"></span> Total Responses</h3>
+                        <hr/>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h3>"On a scale of 1-5(lowest to highest), how would you rate our service?"</h3>
+                                <canvas id="serviceChart" width="300" height="300"></canvas>
+                            </div>
+                            <div class="col-sm-6">
+                                <h3>"Would you recommend Poly Coffee to your friends and family?"</h3>
+                                <canvas id="recChart" width="300" height="300"></canvas>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <h3>"Customer Feedback"</h3>
+                            <table id="feedback">
+                                <tr>
+                                    <th>Response Text / Transcript</th>
+                                    <th>Recording</th>
+                                </tr>
+                            </table>
+                        </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- JS Dependencies -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./JS/chart.js"></script>
+    <!-- App script -->
+    <script src="./JS/results.js"></script>
+
+</body>
+
+</html>

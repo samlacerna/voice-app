@@ -1,0 +1,34 @@
+{
+  "name": "voice-app",
+  "version": "1.0.0",
+  "description": "Twilio voice app integration",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samlacerna/voice-app.git"
+  },
+  "author": "Sam Lacerna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samlacerna/voice-app/issues"
+  },
+  "homepage": "https://github.com/samlacerna/voice-app#readme",
+    "dependencies": {
+    "body-parser": "^1.11.0",
+    "express": "^4.11.2",
+    "jade": "^1.9.2",
+    "mongoose": "4.6.6",
+    "morgan": "^1.5.1",
+    "ngrok": "^2.2.8",
+    "twilio": "3.0.0-rc.16"
+  },
+    "devDependencies": {
+    "bluebird": "^3.4.6",
+    "lodash": "^4.16.6",
+    "xmldom": "^0.1.22",
+    "xpath": "0.0.23"
+  }
+}

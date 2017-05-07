@@ -1,0 +1,17 @@
+{
+  "name": "Voice App",
+  "description": "Integrating voice API using twilio",
+  "keywords": [
+    "twilio",
+    "node.js",
+    "mongodb",
+    "mongoose",
+    "express",
+    "surveys"
+  ],
+  "repository": "https://github.com/samlacerna/voice-app.git",
+  "success_url": "/landing.html",
+  "addons": [
+    "mongolab"
+  ]
+}
