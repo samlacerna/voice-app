@@ -40,8 +40,8 @@ exports.interview = function(request, response) {
 
         // Add a greeting if this is the first question
         if (questionIndex === 0) {
-            say('Thank you for taking our survey. Please listen carefully '
-                + 'to the following questions.');
+            say('Thank you for taking our customer survey. Please listen carefully '
+                + 'to the following questions. Please wait for the prompt to fully finish before entering your response.');
         }
 
         // Otherwise, ask the next question
